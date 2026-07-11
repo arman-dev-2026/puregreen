@@ -36,4 +36,4 @@ jobs:
         uses: digitalocean/app_action/deploy@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-          app_name: puregreen-construction
+          app_id: 6a7d0340-98cb-4e1e-83e9-5cb34926ce32
