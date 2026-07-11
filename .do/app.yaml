@@ -5,7 +5,7 @@ static_sites:
       repo: arman-dev-2026/puregreen
       branch: main
       deploy_on_push: true
-    build_command: npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/puregreen-construction run build
+    build_command: npm install -g pnpm@9 && pnpm install --frozen-lockfile --ignore-scripts && pnpm rebuild esbuild && pnpm --filter @workspace/puregreen-construction run build
     output_dir: artifacts/puregreen-construction/dist
     environment_slug: node-js
     routes:

@@ -24,7 +24,7 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts && pnpm rebuild esbuild
 
       - name: Type check
         run: pnpm --filter @workspace/puregreen-construction run typecheck
