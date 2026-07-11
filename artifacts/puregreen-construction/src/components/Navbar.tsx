@@ -16,10 +16,15 @@ export function Navbar() {
 
   const scrollTo = (id: string) => {
     setIsMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    // Wait for the mobile menu close animation to finish before scrolling,
+    // otherwise the collapsing menu shifts the layout and the target is wrong.
+    const delay = isMobileMenuOpen ? 350 : 0;
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, delay);
   };
 
   const navLinks = [
