@@ -1,0 +1,14 @@
+name: puregreen-construction
+static_sites:
+  - name: puregreen-construction
+    github:
+      repo: arman-dev-2026/puregreen
+      branch: main
+      deploy_on_push: true
+    build_command: npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/puregreen-construction run build
+    output_dir: artifacts/puregreen-construction/dist
+    environment_slug: node-js
+    routes:
+      - path: /
+    error_document: index.html
+    index_document: index.html
