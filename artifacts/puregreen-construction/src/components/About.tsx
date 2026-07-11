@@ -28,7 +28,7 @@ const pillars = [
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-card border-y border-card-border overflow-hidden">
+    <section id="about" className="py-24 bg-card border-y border-card-border overflow-hidden scroll-mt-20">
       <div className="container mx-auto px-4 md:px-6">
         
         <div className="flex flex-col lg:flex-row gap-16 items-center">
