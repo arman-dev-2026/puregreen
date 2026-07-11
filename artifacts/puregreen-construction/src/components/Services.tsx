@@ -1,119 +1,115 @@
 import { motion } from 'framer-motion';
-import { 
-  Wrench, 
-  Home, 
-  Pickaxe, 
-  HardHat, 
-  Hammer, 
-  Bath, 
-  ArrowDownToLine 
+import {
+  Wrench,
+  Home,
+  Layers,
+  HardHat,
+  Hammer,
+  Bath,
+  ArrowDownToLine
 } from 'lucide-react';
-import { fadeIn, staggerContainer } from '@/lib/animations';
 
 const services = [
   {
     icon: Wrench,
     title: 'Licensed Plumbing',
-    description: 'Interior rough-in and finish plumbing by a licensed plumber.'
+    description: 'Interior rough-in and finish plumbing by a licensed plumber — code-compliant every time.'
   },
   {
     icon: Home,
     title: 'Home Additions',
-    description: 'Structural additions, framing, and interior finish to expand your living space.'
+    description: 'Structural additions, framing, and interior finish to seamlessly expand your living space.'
   },
   {
-    icon: Pickaxe,
+    icon: Layers,
     title: 'Basement Renovations',
-    description: 'Full basement development, finishing, and waterproofing.'
+    description: 'Full basement development, finishing, and waterproofing for suites or recreation rooms.'
   },
   {
     icon: HardHat,
     title: 'Foundation Work',
-    description: 'Poured concrete foundations, open-concept beam installation, LVL and steel beam support.'
+    description: 'Poured concrete foundations, beam installation, and structural support executed with precision.'
   },
   {
     icon: Hammer,
     title: 'Concrete Work',
-    description: 'Flatwork, foundation walls, slabs, and concrete finishing.'
+    description: 'Driveways, walkways, patios, slabs, and retaining walls — durable and built to last.'
   },
   {
     icon: Bath,
     title: 'Kitchen & Bathroom Renovations',
-    description: 'Full gut-and-rebuild, custom tile, fixtures, and finish carpentry.'
+    description: 'Full gut-and-rebuild, custom tile, fixtures, and finish carpentry for your key spaces.'
   },
   {
     icon: ArrowDownToLine,
     title: 'Basement Underpinning',
-    description: 'Bench or needle underpinning to increase ceiling height and structural depth.'
+    description: 'Lower your basement floor to increase ceiling height and property value with structural integrity.'
   }
 ];
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.08, duration: 0.4, ease: 'easeOut' }
+  })
+};
+
 export function Services() {
   return (
-    <section id="services" className="py-24 bg-background scroll-mt-20">
-      <div className="container mx-auto px-4 md:px-6">
-        
-        <div className="text-center mb-16 max-w-3xl mx-auto">
-          <motion.h2 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeIn}
-            className="text-3xl md:text-5xl font-bold text-white mb-4 font-display uppercase tracking-wider"
-          >
-            Professional <span className="text-primary">Services</span>
-          </motion.h2>
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeIn}
-            className="w-24 h-1 bg-primary mx-auto mb-6"
-          />
-          <motion.p 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={fadeIn}
-            className="text-gray-400 text-lg"
-          >
-            Complete construction solutions delivered with expertise and precision.
-          </motion.p>
-        </div>
+    <section id="services" className="py-24 bg-gray-50 scroll-mt-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
 
-        <motion.div 
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-80px' }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-16"
         >
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-[#166534] uppercase tracking-wide mb-4">
+            Our Services
+          </h2>
+          <div className="w-24 h-1 bg-[#166534] mx-auto mb-6" />
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg font-sans">
+            Comprehensive construction and renovation solutions for the Greater Toronto Area.
+          </p>
+        </motion.div>
+
+        {/* Cards grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
-            // Make the last item span full width on large screens to avoid orphan
-            const isLastOdd = index === services.length - 1 && services.length % 3 !== 0 && services.length % 4 !== 0;
-            
+            const isLastOdd = index === services.length - 1 && services.length % 2 !== 0;
             return (
               <motion.div
                 key={service.title}
-                variants={fadeIn}
-                className={`bg-card border border-card-border p-8 hover:border-primary/50 transition-colors group flex flex-col items-start ${
-                  isLastOdd ? 'md:col-span-2 lg:col-span-1' : ''
+                custom={index}
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: '-60px' }}
+                className={`bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow p-8 flex gap-6 items-start group ${
+                  isLastOdd ? 'md:col-span-2 md:max-w-lg md:mx-auto w-full' : ''
                 }`}
               >
-                <div className="bg-primary/10 p-4 rounded-none mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <Icon className="w-8 h-8" />
+                <div className="w-14 h-14 shrink-0 bg-[#166534] rounded-full flex items-center justify-center text-white group-hover:scale-105 transition-transform">
+                  <Icon className="w-7 h-7" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 font-display uppercase tracking-wide">
-                  {service.title}
-                </h3>
-                <p className="text-gray-400 leading-relaxed">
-                  {service.description}
-                </p>
+                <div className="min-w-0">
+                  <h3 className="text-xl font-display font-bold text-gray-900 mb-2 uppercase tracking-wide">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed font-sans text-sm md:text-base">
+                    {service.description}
+                  </p>
+                </div>
               </motion.div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

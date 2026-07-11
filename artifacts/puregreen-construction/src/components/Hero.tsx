@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, ChevronDown } from 'lucide-react';
-import { fadeIn, slideInLeft } from '@/lib/animations';
+import { Phone, ArrowRight, ChevronDown } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
 
 export function Hero() {
@@ -9,71 +8,86 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Image & Overlay */}
+    <section className="relative h-[85vh] min-h-[580px] flex items-center overflow-hidden">
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[20s] ease-linear hover:scale-105"
-          style={{ 
-            backgroundImage: `url(${heroBg})`,
-            backgroundPosition: 'center 40%'
-          }}
+        <img
+          src={heroBg}
+          alt="Construction site Toronto"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-background/80 bg-gradient-to-t from-background via-background/80 to-background/30" />
+        {/* Forest green gradient overlay — strong left, fades right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#166534]/95 via-[#166534]/75 to-[#166534]/20" />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4 md:px-6 flex flex-col items-center text-center">
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 w-full">
         <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeIn}
-          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="max-w-2xl"
         >
-          <motion.div variants={slideInLeft} className="mb-4">
-            <span className="inline-block bg-primary/20 text-primary border border-primary/30 px-3 py-1 text-sm font-semibold uppercase tracking-widest font-display mb-4">
-              Greater Toronto Area
-            </span>
-          </motion.div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight uppercase font-display tracking-wide">
-            Built on <span className="text-primary">Trust.</span><br />
-            Powered by <span className="text-primary">Experience.</span>
+          {/* Badge */}
+          <div className="inline-block bg-white text-[#166534] font-bold px-4 py-1.5 mb-6 text-xs uppercase tracking-widest font-display">
+            General Contractor — Greater Toronto Area
+          </div>
+
+          {/* Heading */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] mb-6 uppercase">
+            <span className="text-white">Building Trust.</span><br />
+            <span className="text-[#a7f3d0]">Building Excellence.</span>
           </h1>
-          
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-sans leading-relaxed">
-            Call for your free quote for all your construction needs! We bring 20 years of expertise to every foundation, addition, and renovation.
+
+          {/* Sub-copy */}
+          <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-xl leading-relaxed font-sans font-light">
+            With 20 years of GTA experience, we deliver superior construction, renovation, and structural services. Fully insured. Fully committed.
           </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
+
+          {/* CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
               href="tel:6479601307"
-              className="w-full sm:w-auto flex items-center justify-center bg-primary hover:bg-primary/90 text-white font-display uppercase tracking-wider px-8 py-4 text-base font-semibold transition-all hover:-translate-y-1 active:translate-y-0"
+              className="flex items-center justify-center gap-3 bg-white text-[#166534] hover:bg-gray-100 font-display font-bold uppercase tracking-wider px-8 py-4 text-sm transition-colors"
             >
-              <Phone className="w-5 h-5 mr-3" />
+              <Phone className="w-5 h-5" />
               Get a Free Quote
             </a>
-            <button 
+            <button
               onClick={scrollToServices}
-              className="w-full sm:w-auto flex items-center justify-center bg-transparent border border-white/30 hover:border-white hover:bg-white/5 text-white font-display uppercase tracking-wider px-8 py-4 text-base font-semibold transition-all"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 font-display font-bold uppercase tracking-wider px-8 py-4 text-sm transition-colors"
             >
-              Our Services
+              Our Services <ArrowRight className="w-4 h-4" />
             </button>
+          </div>
+
+          {/* Trust indicators */}
+          <div className="mt-10 flex flex-wrap gap-6 text-white/90 text-sm font-medium">
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> 20+ Years Experience
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> Fully Insured (SAB Liability)
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> Licensed Professionals
+            </span>
           </div>
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div 
+      {/* Scroll indicator */}
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden md:flex flex-col items-center cursor-pointer text-white/50 hover:text-white transition-colors"
+        transition={{ delay: 1.2, duration: 0.8 }}
         onClick={scrollToServices}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center cursor-pointer text-white/60 hover:text-white transition-colors"
       >
-        <span className="text-xs uppercase tracking-widest font-display mb-2">Scroll</span>
+        <span className="text-[10px] uppercase tracking-widest font-display mb-1">Scroll</span>
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" as const }}
+          animate={{ y: [0, 6, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
         >
           <ChevronDown className="w-5 h-5" />
         </motion.div>
