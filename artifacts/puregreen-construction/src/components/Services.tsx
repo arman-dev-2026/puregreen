@@ -14,7 +14,7 @@ const services = [
   {
     icon: Wrench,
     title: 'Licensed Plumbing',
-    description: 'Interior rough-in and finish plumbing by a licensed journeyman plumber.'
+    description: 'Interior rough-in and finish plumbing by a licensed plumber.'
   },
   {
     icon: Home,

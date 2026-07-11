@@ -16,7 +16,7 @@ const pillars = [
   },
   {
     icon: Award,
-    title: 'Licensed Journeyman Plumber',
+    title: 'Licensed Plumber',
     description: 'Certified trade expertise on every job, ensuring code-compliant work.'
   },
   {
