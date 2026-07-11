@@ -5,18 +5,7 @@ import heroBg from '@/assets/hero-bg.jpg';
 
 export function Hero() {
   const scrollToServices = () => {
-    const element = document.getElementById('services');
-    if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      
-      window.scrollTo({
-        top: elementPosition - offset,
-        behavior: 'smooth'
-      });
-    }
+    document.getElementById('services')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
