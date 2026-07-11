@@ -31,7 +31,7 @@ export function Contact() {
             variants={fadeIn}
             className="text-gray-400 text-lg"
           >
-            Contact us today for a free quotation for all your construction needs.
+            Contact us today for a free quote for all your construction needs.
           </motion.p>
         </div>
 

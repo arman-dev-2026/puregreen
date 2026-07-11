@@ -21,7 +21,7 @@ const pillars = [
   },
   {
     icon: FileText,
-    title: 'Free Quotations',
+    title: 'Free Quotes',
     description: 'No-cost, no-obligation estimates for every prospective project.'
   }
 ];

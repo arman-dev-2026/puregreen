@@ -52,7 +52,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-sans leading-relaxed">
-            Call for your free quotation for all your construction needs! We bring 20 years of expertise to every foundation, addition, and renovation.
+            Call for your free quote for all your construction needs! We bring 20 years of expertise to every foundation, addition, and renovation.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
