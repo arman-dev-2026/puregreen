@@ -103,7 +103,7 @@ export function Contact() {
             Ready to Build? Call Us Today.
           </h3>
           <p className="text-gray-200 mb-6 font-sans text-base max-w-xl mx-auto">
-            We offer free, no-obligation quotes on all projects. Financing available through FinanceIt.
+            We offer free, no-obligation quotes on all projects. New financing options coming soon.
           </p>
           <a
             href="tel:6479601307"
