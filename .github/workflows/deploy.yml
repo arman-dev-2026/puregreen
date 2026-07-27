@@ -36,4 +36,4 @@ jobs:
         uses: digitalocean/app_action/deploy@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-          app_id: f169b3f0-0879-4918-b348-65490aae8fea
+          app_id: 21bdc560-21d7-49fa-ad81-7ae38fb60541
