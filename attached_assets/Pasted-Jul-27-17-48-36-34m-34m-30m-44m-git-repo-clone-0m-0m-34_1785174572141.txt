@@ -1,0 +1,126 @@
+Jul 27 17:48:36  [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+Jul 27 17:48:36  [34m│[0m [34m › fetching app source code[0m
+Jul 27 17:48:36  [34m│[0m => Selecting branch "main"
+Jul 27 17:48:36  [34m│[0m => Checking out commit "a0397c188a283d42e47e1aa08d5626a8375431ae"
+Jul 27 17:48:36  [34m│[0m 
+Jul 27 17:48:36  [34m│[0m [32m ✔ cloned repo to [35m/workspace[0m[0m
+Jul 27 17:48:36  [34m╰────────────────────────────────────────╼[0m
+Jul 27 17:48:36  
+Jul 27 17:48:36  [34m╭────────────[34m[30m[44m buildpack detection [0m[0m[34m───────────╼[0m
+Jul 27 17:48:36  [34m│[0m [34m › using Ubuntu 22.04 stack[0m
+Jul 27 17:48:38  [34m│[0m Detected the following buildpacks suitable to build your app:
+Jul 27 17:48:38  [34m│[0m 
+Jul 27 17:48:38  [34m│[0m    digitalocean/nodejs-appdetect  v0.1.2    
+Jul 27 17:48:38  [34m│[0m    heroku/nodejs                  v0.342.5  (Node.js)
+Jul 27 17:48:38  [34m│[0m    digitalocean/procfile          v0.1.0    (Procfile)
+Jul 27 17:48:38  [34m│[0m    digitalocean/custom            v0.2.0    (Custom Build Command)
+Jul 27 17:48:38  [34m╰─────────────────────────────────────────────╼[0m
+Jul 27 17:48:38  
+Jul 27 17:48:38  [34m╭────────────[34m[30m[44m app build [0m[0m[34m───────────╼[0m
+Jul 27 17:48:38  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 17:48:38  [34m│[0m Timer: Builder started at 2026-07-27T17:48:38Z
+Jul 27 17:48:38  [34m│[0m Project contains pnpm-lock.yaml, using pnpm
+Jul 27 17:48:39  [34m│[0m        
+Jul 27 17:48:39  [34m│[0m -----> Creating runtime environment
+Jul 27 17:48:39  [34m│[0m        
+Jul 27 17:48:39  [34m│[0m        NPM_CONFIG_LOGLEVEL=error
+Jul 27 17:48:39  [34m│[0m        NODE_VERBOSE=false
+Jul 27 17:48:39  [34m│[0m        NODE_ENV=
+Jul 27 17:48:39  [34m│[0m        NODE_MODULES_CACHE=true
+Jul 27 17:48:39  [34m│[0m        
+Jul 27 17:48:39  [34m│[0m -----> Installing binaries
+Jul 27 17:48:39  [34m│[0m        engines.node (package.json):   20.x
+Jul 27 17:48:39  [34m│[0m        engines.npm (package.json):    unspecified (use default)
+Jul 27 17:48:39  [34m│[0m        engines.pnpm (package.json):   unspecified (use default)
+Jul 27 17:48:39  [34m│[0m        packageManager (package.json): pnpm@9.15.0
+Jul 27 17:48:39  [34m│[0m        
+Jul 27 17:48:39  [34m│[0m        Resolving node version 20.x...
+Jul 27 17:48:39  [34m│[0m        Downloading and installing node 20.20.2...
+Jul 27 17:48:40  [34m│[0m        Validating checksum
+Jul 27 17:48:43  [34m│[0m        Using default npm version: 10.8.2
+Jul 27 17:48:43  [34m│[0m        Downloading and installing pnpm (9.15.0)
+Jul 27 17:48:45  [34m│[0m        Using pnpm 9.15.0
+Jul 27 17:48:47  [34m│[0m        
+Jul 27 17:48:47  [34m│[0m -----> Installing dependencies
+Jul 27 17:48:47  [34m│[0m        Running 'pnpm install' with pnpm-lock.yaml
+Jul 27 17:48:48  [34m│[0m        Scope: all 9 workspace projects
+Jul 27 17:48:49  [34m│[0m        
+Jul 27 17:48:49  [34m│[0m           ╭───────────────────────────────────────────────────────────────────╮
+Jul 27 17:48:49  [34m│[0m           │                                                                   │
+Jul 27 17:48:49  [34m│[0m           │                Update available! 9.15.0 → 11.17.0.                │
+Jul 27 17:48:49  [34m│[0m           │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v11.17.0   │
+Jul 27 17:48:49  [34m│[0m           │                 Run "pnpm add -g pnpm" to update.                 │
+Jul 27 17:48:49  [34m│[0m           │                                                                   │
+Jul 27 17:48:49  [34m│[0m           ╰───────────────────────────────────────────────────────────────────╯
+Jul 27 17:48:49  [34m│[0m        
+Jul 27 17:48:55  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+Jul 27 17:48:55  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+Jul 27 17:48:56  [34m│[0m        
+Jul 27 17:48:56  [34m│[0m        dependencies:
+Jul 27 17:48:56  [34m│[0m        + @replit/connectors-sdk 0.4.1
+Jul 27 17:48:56  [34m│[0m        
+Jul 27 17:48:56  [34m│[0m        devDependencies:
+Jul 27 17:48:56  [34m│[0m        + prettier 3.9.4
+Jul 27 17:48:56  [34m│[0m        + typescript 5.9.3
+Jul 27 17:48:56  [34m│[0m        
+Jul 27 17:48:56  [34m│[0m        . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+Jul 27 17:48:56  [34m│[0m        . preinstall: Done
+Jul 27 17:48:56  [34m│[0m        Done in 8.4s
+Jul 27 17:48:56  [34m│[0m        
+Jul 27 17:48:56  [34m│[0m -----> Build
+Jul 27 17:48:56  [34m│[0m        Running build
+Jul 27 17:48:57  [34m│[0m        
+Jul 27 17:48:57  [34m│[0m        > workspace@0.0.0 build /workspace
+Jul 27 17:48:57  [34m│[0m        > pnpm run typecheck && pnpm -r --if-present run build
+Jul 27 17:48:57  [34m│[0m        
+Jul 27 17:48:57  [34m│[0m        
+Jul 27 17:48:57  [34m│[0m        > workspace@0.0.0 typecheck /workspace
+Jul 27 17:48:57  [34m│[0m        > pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+Jul 27 17:48:57  [34m│[0m        
+Jul 27 17:48:58  [34m│[0m        
+Jul 27 17:48:58  [34m│[0m        > workspace@0.0.0 typecheck:libs /workspace
+Jul 27 17:48:58  [34m│[0m        > tsc --build
+Jul 27 17:48:58  [34m│[0m        
+Jul 27 17:49:00  [34m│[0m        Scope: 4 of 9 workspace projects
+Jul 27 17:49:00  [34m│[0m        artifacts/api-server typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:49:00  [34m│[0m        artifacts/mockup-sandbox typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:49:00  [34m│[0m        artifacts/puregreen-construction typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:49:00  [34m│[0m        scripts typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:49:01  [34m│[0m        scripts typecheck: Done
+Jul 27 17:49:01  [34m│[0m        artifacts/api-server typecheck: Done
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck: src/components/Services.tsx(90,17): error TS2322: Type '{ hidden: { opacity: number; y: number; }; visible: (i: number) => { opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }; }' is not assignable to type 'Variants'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:   Property 'visible' is incompatible with index signature.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:     Type '(i: number) => { opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }' is not assignable to type 'Variant'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:       Type '(i: number) => { opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }' is not assignable to type 'TargetResolver'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:         Type '{ opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }' is not assignable to type 'string | TargetAndTransition'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:           Type '{ opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }' is not assignable to type 'TargetAndTransition'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:             Type '{ opacity: number; y: number; transition: { delay: number; duration: number; ease: string; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues$1 | undefined; }'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:               Types of property 'transition' are incompatible.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:                 Type '{ delay: number; duration: number; ease: string; }' is not assignable to type 'Transition<any> | undefined'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:                   Type '{ delay: number; duration: number; ease: string; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:                     Type '{ delay: number; duration: number; ease: string; }' is not assignable to type 'ValueAnimationTransition<any>'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:                       Types of property 'ease' are incompatible.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck:                         Type 'string' is not assignable to type 'Easing | Easing[] | undefined'.
+Jul 27 17:49:05  [34m│[0m        artifacts/puregreen-construction typecheck: Failed
+Jul 27 17:49:05  [34m│[0m        /workspace/artifacts/puregreen-construction:
+Jul 27 17:49:05  [34m│[0m         ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/puregreen-construction@0.0.0 typecheck: `tsc -p tsconfig.json --noEmit`
+Jul 27 17:49:05  [34m│[0m        Exit status 2
+Jul 27 17:49:05  [34m│[0m         ELIFECYCLE  Command failed with exit code 2.
+Jul 27 17:49:05  [34m│[0m         ELIFECYCLE  Command failed with exit code 2.
+Jul 27 17:49:05  [34m│[0m 
+Jul 27 17:49:05  [34m│[0m -----> Build failed
+Jul 27 17:49:05  [34m│[0m        
+Jul 27 17:49:05  [34m│[0m        We're sorry this build is failing! You can troubleshoot common issues here:
+Jul 27 17:49:05  [34m│[0m        https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+Jul 27 17:49:05  [34m│[0m        
+Jul 27 17:49:05  [34m│[0m        If you're stuck, please submit a ticket so we can help:
+Jul 27 17:49:05  [34m│[0m        https://help.heroku.com/
+Jul 27 17:49:05  [34m│[0m        
+Jul 27 17:49:05  [34m│[0m        Love,
+Jul 27 17:49:05  [34m│[0m        Heroku
+Jul 27 17:49:05  [34m│[0m        
+Jul 27 17:49:05  [34m│[0m Timer: Builder ran for 27.05831099s and ended at 2026-07-27T17:49:05Z
+Jul 27 17:49:05  [34m│[0m [31;1mERROR: [0mfailed to build: exit status 2
+Jul 27 17:49:06  [34m│[0m 
+Jul 27 17:49:06  [34m│[0m 
+Jul 27 17:49:06  [34m│[0m [31m ✘ build failed[0m
