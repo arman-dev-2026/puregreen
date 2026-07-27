@@ -1,0 +1,128 @@
+Jul 27 17:50:21  [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+Jul 27 17:50:21  [34m│[0m [34m › fetching app source code[0m
+Jul 27 17:50:21  [34m│[0m => Selecting branch "main"
+Jul 27 17:50:21  [34m│[0m => Checking out commit "b07dce43e68ad6fb6dfd403be53c917275033ac0"
+Jul 27 17:50:21  [34m│[0m 
+Jul 27 17:50:21  [34m│[0m [32m ✔ cloned repo to [35m/workspace[0m[0m
+Jul 27 17:50:21  [34m╰────────────────────────────────────────╼[0m
+Jul 27 17:50:21  
+Jul 27 17:50:21  [34m╭────────────[34m[30m[44m buildpack detection [0m[0m[34m───────────╼[0m
+Jul 27 17:50:21  [34m│[0m [34m › using Ubuntu 22.04 stack[0m
+Jul 27 17:50:23  [34m│[0m Detected the following buildpacks suitable to build your app:
+Jul 27 17:50:23  [34m│[0m 
+Jul 27 17:50:23  [34m│[0m    digitalocean/nodejs-appdetect  v0.1.2    
+Jul 27 17:50:23  [34m│[0m    heroku/nodejs                  v0.342.5  (Node.js)
+Jul 27 17:50:23  [34m│[0m    digitalocean/procfile          v0.1.0    (Procfile)
+Jul 27 17:50:23  [34m│[0m    digitalocean/custom            v0.2.0    (Custom Build Command)
+Jul 27 17:50:23  [34m╰─────────────────────────────────────────────╼[0m
+Jul 27 17:50:23  
+Jul 27 17:50:23  [34m╭────────────[34m[30m[44m app build [0m[0m[34m───────────╼[0m
+Jul 27 17:50:23  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 17:50:23  [34m│[0m Timer: Builder started at 2026-07-27T17:50:23Z
+Jul 27 17:50:23  [34m│[0m Project contains pnpm-lock.yaml, using pnpm
+Jul 27 17:50:23  [34m│[0m        
+Jul 27 17:50:23  [34m│[0m -----> Creating runtime environment
+Jul 27 17:50:23  [34m│[0m        
+Jul 27 17:50:23  [34m│[0m        NPM_CONFIG_LOGLEVEL=error
+Jul 27 17:50:23  [34m│[0m        NODE_VERBOSE=false
+Jul 27 17:50:23  [34m│[0m        NODE_ENV=
+Jul 27 17:50:23  [34m│[0m        NODE_MODULES_CACHE=true
+Jul 27 17:50:23  [34m│[0m        
+Jul 27 17:50:23  [34m│[0m -----> Installing binaries
+Jul 27 17:50:24  [34m│[0m        engines.node (package.json):   20.x
+Jul 27 17:50:24  [34m│[0m        engines.npm (package.json):    unspecified (use default)
+Jul 27 17:50:24  [34m│[0m        engines.pnpm (package.json):   unspecified (use default)
+Jul 27 17:50:24  [34m│[0m        packageManager (package.json): pnpm@9.15.0
+Jul 27 17:50:24  [34m│[0m        
+Jul 27 17:50:24  [34m│[0m        Resolving node version 20.x...
+Jul 27 17:50:24  [34m│[0m        Downloading and installing node 20.20.2...
+Jul 27 17:50:24  [34m│[0m        Validating checksum
+Jul 27 17:50:26  [34m│[0m        Using default npm version: 10.8.2
+Jul 27 17:50:26  [34m│[0m        Downloading and installing pnpm (9.15.0)
+Jul 27 17:50:29  [34m│[0m        Using pnpm 9.15.0
+Jul 27 17:50:30  [34m│[0m        
+Jul 27 17:50:30  [34m│[0m -----> Installing dependencies
+Jul 27 17:50:31  [34m│[0m        Running 'pnpm install' with pnpm-lock.yaml
+Jul 27 17:50:31  [34m│[0m        Scope: all 9 workspace projects
+Jul 27 17:50:32  [34m│[0m        
+Jul 27 17:50:32  [34m│[0m           ╭───────────────────────────────────────────────────────────────────╮
+Jul 27 17:50:32  [34m│[0m           │                                                                   │
+Jul 27 17:50:32  [34m│[0m           │                Update available! 9.15.0 → 11.17.0.                │
+Jul 27 17:50:32  [34m│[0m           │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v11.17.0   │
+Jul 27 17:50:32  [34m│[0m           │                 Run "pnpm add -g pnpm" to update.                 │
+Jul 27 17:50:32  [34m│[0m           │                                                                   │
+Jul 27 17:50:32  [34m│[0m           ╰───────────────────────────────────────────────────────────────────╯
+Jul 27 17:50:32  [34m│[0m        
+Jul 27 17:50:37  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+Jul 27 17:50:37  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+Jul 27 17:50:38  [34m│[0m        
+Jul 27 17:50:38  [34m│[0m        dependencies:
+Jul 27 17:50:38  [34m│[0m        + @replit/connectors-sdk 0.4.1
+Jul 27 17:50:38  [34m│[0m        
+Jul 27 17:50:38  [34m│[0m        devDependencies:
+Jul 27 17:50:38  [34m│[0m        + prettier 3.9.4
+Jul 27 17:50:38  [34m│[0m        + typescript 5.9.3
+Jul 27 17:50:38  [34m│[0m        
+Jul 27 17:50:38  [34m│[0m        . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+Jul 27 17:50:38  [34m│[0m        . preinstall: Done
+Jul 27 17:50:38  [34m│[0m        Done in 7.5s
+Jul 27 17:50:38  [34m│[0m        
+Jul 27 17:50:38  [34m│[0m -----> Build
+Jul 27 17:50:38  [34m│[0m        Running build
+Jul 27 17:50:39  [34m│[0m        
+Jul 27 17:50:39  [34m│[0m        > workspace@0.0.0 build /workspace
+Jul 27 17:50:39  [34m│[0m        > pnpm run typecheck && pnpm -r --if-present run build
+Jul 27 17:50:39  [34m│[0m        
+Jul 27 17:50:39  [34m│[0m        
+Jul 27 17:50:39  [34m│[0m        > workspace@0.0.0 typecheck /workspace
+Jul 27 17:50:39  [34m│[0m        > pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+Jul 27 17:50:39  [34m│[0m        
+Jul 27 17:50:40  [34m│[0m        
+Jul 27 17:50:40  [34m│[0m        > workspace@0.0.0 typecheck:libs /workspace
+Jul 27 17:50:40  [34m│[0m        > tsc --build
+Jul 27 17:50:40  [34m│[0m        
+Jul 27 17:50:41  [34m│[0m        Scope: 4 of 9 workspace projects
+Jul 27 17:50:41  [34m│[0m        artifacts/api-server typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:50:41  [34m│[0m        artifacts/mockup-sandbox typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:50:41  [34m│[0m        artifacts/puregreen-construction typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:50:41  [34m│[0m        scripts typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 17:50:42  [34m│[0m        scripts typecheck: Done
+Jul 27 17:50:43  [34m│[0m        artifacts/api-server typecheck: Done
+Jul 27 17:50:46  [34m│[0m        artifacts/puregreen-construction typecheck: Done
+Jul 27 17:50:46  [34m│[0m        artifacts/mockup-sandbox typecheck: Done
+Jul 27 17:50:46  [34m│[0m        Scope: 8 of 9 workspace projects
+Jul 27 17:50:46  [34m│[0m        artifacts/mockup-sandbox build$ vite build
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build: failed to load config from /workspace/artifacts/mockup-sandbox/vite.config.ts
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build: error during build:
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build: Error: PORT environment variable is required but was not provided.
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at file:///workspace/artifacts/mockup-sandbox/node_modules/.vite-temp/vite.config.ts.timestamp-1785174647066-efa7599e1ead5.mjs:145:9
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at ModuleJob.run (node:internal/modules/esm/module_job:325:25)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async loadConfigFromBundledFile (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/chunks/config.js:35996:12)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async bundleAndLoadConfigFile (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/chunks/config.js:35884:17)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async loadConfigFromFile (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/chunks/config.js:35851:42)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async resolveConfig (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/chunks/config.js:35500:22)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async createBuilder (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/chunks/config.js:33955:19)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build:     at async CAC.<anonymous> (file:///workspace/node_modules/.pnpm/vite@7.3.6_@types+node@25.9.4_jiti@2.7.0_lightningcss@1.32.0_tsx@4.23.0_yaml@2.9.0/node_modules/vite/dist/node/cli.js:629:10)
+Jul 27 17:50:47  [34m│[0m        artifacts/mockup-sandbox build: Failed
+Jul 27 17:50:47  [34m│[0m        /workspace/artifacts/mockup-sandbox:
+Jul 27 17:50:47  [34m│[0m         ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/mockup-sandbox@2.0.0 build: `vite build`
+Jul 27 17:50:47  [34m│[0m        Exit status 1
+Jul 27 17:50:47  [34m│[0m         ELIFECYCLE  Command failed with exit code 1.
+Jul 27 17:50:47  [34m│[0m 
+Jul 27 17:50:47  [34m│[0m -----> Build failed
+Jul 27 17:50:47  [34m│[0m        
+Jul 27 17:50:47  [34m│[0m        We're sorry this build is failing! You can troubleshoot common issues here:
+Jul 27 17:50:47  [34m│[0m        https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+Jul 27 17:50:47  [34m│[0m        
+Jul 27 17:50:47  [34m│[0m        If you're stuck, please submit a ticket so we can help:
+Jul 27 17:50:47  [34m│[0m        https://help.heroku.com/
+Jul 27 17:50:47  [34m│[0m        
+Jul 27 17:50:47  [34m│[0m        Love,
+Jul 27 17:50:47  [34m│[0m        Heroku
+Jul 27 17:50:47  [34m│[0m        
+Jul 27 17:50:47  [34m│[0m Timer: Builder ran for 24.085338372s and ended at 2026-07-27T17:50:47Z
+Jul 27 17:50:47  [34m│[0m [31;1mERROR: [0mfailed to build: exit status 1
+Jul 27 17:50:47  [34m│[0m 
+Jul 27 17:50:47  [34m│[0m 
+Jul 27 17:50:47  [34m│[0m [31m ✘ build failed[0m
