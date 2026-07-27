@@ -1,4 +1,5 @@
 name: puregreen-construction
+region: tor
 static_sites:
   - name: puregreen-construction
     github:
