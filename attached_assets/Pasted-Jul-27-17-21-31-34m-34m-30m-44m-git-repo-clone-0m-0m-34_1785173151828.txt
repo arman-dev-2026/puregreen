@@ -1,0 +1,100 @@
+Jul 27 17:21:31  [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+Jul 27 17:21:31  [34m│[0m [34m › fetching app source code[0m
+Jul 27 17:21:31  [34m│[0m => Selecting branch "main"
+Jul 27 17:21:31  [34m│[0m => Checking out commit "9f8568944fb8ab49ddecd45cbdde45c94eefa9c2"
+Jul 27 17:21:31  [34m│[0m 
+Jul 27 17:21:31  [34m│[0m [32m ✔ cloned repo to [35m/workspace[0m[0m
+Jul 27 17:21:31  [34m╰────────────────────────────────────────╼[0m
+Jul 27 17:21:31  
+Jul 27 17:21:31  [34m╭────────────[34m[30m[44m buildpack detection [0m[0m[34m───────────╼[0m
+Jul 27 17:21:31  [34m│[0m [34m › using Ubuntu 22.04 stack[0m
+Jul 27 17:21:33  [34m│[0m Detected the following buildpacks suitable to build your app:
+Jul 27 17:21:33  [34m│[0m 
+Jul 27 17:21:33  [34m│[0m    digitalocean/nodejs-appdetect  v0.1.2    
+Jul 27 17:21:33  [34m│[0m    heroku/nodejs                  v0.342.5  (Node.js)
+Jul 27 17:21:33  [34m│[0m    digitalocean/procfile          v0.1.0    (Procfile)
+Jul 27 17:21:33  [34m│[0m    digitalocean/custom            v0.2.0    (Custom Build Command)
+Jul 27 17:21:33  [34m╰─────────────────────────────────────────────╼[0m
+Jul 27 17:21:33  
+Jul 27 17:21:33  [34m╭────────────[34m[30m[44m app build [0m[0m[34m───────────╼[0m
+Jul 27 17:21:33  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 17:21:33  [34m│[0m Timer: Builder started at 2026-07-27T17:21:33Z
+Jul 27 17:21:33  [34m│[0m Project contains pnpm-lock.yaml, using pnpm
+Jul 27 17:21:34  [34m│[0m        
+Jul 27 17:21:34  [34m│[0m -----> Creating runtime environment
+Jul 27 17:21:34  [34m│[0m        
+Jul 27 17:21:34  [34m│[0m        NPM_CONFIG_LOGLEVEL=error
+Jul 27 17:21:34  [34m│[0m        NODE_VERBOSE=false
+Jul 27 17:21:34  [34m│[0m        NODE_ENV=
+Jul 27 17:21:34  [34m│[0m        NODE_MODULES_CACHE=true
+Jul 27 17:21:34  [34m│[0m        
+Jul 27 17:21:34  [34m│[0m -----> Installing binaries
+Jul 27 17:21:34  [34m│[0m        engines.node (package.json):   unspecified
+Jul 27 17:21:34  [34m│[0m        engines.npm (package.json):    unspecified (use default)
+Jul 27 17:21:34  [34m│[0m        engines.pnpm (package.json):   unspecified (use default)
+Jul 27 17:21:34  [34m│[0m        
+Jul 27 17:21:34  [34m│[0m        Resolving node version 22.x...
+Jul 27 17:21:34  [34m│[0m        Downloading and installing node 22.22.2...
+Jul 27 17:21:35  [34m│[0m        Validating checksum
+Jul 27 17:21:38  [34m│[0m        Using default npm version: 10.9.7
+Jul 27 17:21:38  [34m│[0m        Downloading and installing pnpm (latest)
+Jul 27 17:21:43  [34m│[0m        Using pnpm 11.17.0
+Jul 27 17:21:43  [34m│[0m         !     Default pnpm version used
+Jul 27 17:21:43  [34m│[0m        
+Jul 27 17:21:43  [34m│[0m               A pnpm lockfile (pnpm-lock.yaml) was detected but no specific version of pnpm was defined in package.json in either of the following fields:
+Jul 27 17:21:43  [34m│[0m               - "packageManager"
+Jul 27 17:21:43  [34m│[0m               - "engines.pnpm"
+Jul 27 17:21:43  [34m│[0m        
+Jul 27 17:21:43  [34m│[0m               Without a specific version defined, this build will use "pnpm@latest" by default. We highly recommend setting an explicit version
+Jul 27 17:21:43  [34m│[0m               of pnpm to improve the reliability of your builds.
+Jul 27 17:21:43  [34m│[0m               https://devcenter.heroku.com/articles/nodejs-support
+Jul 27 17:21:43  [34m│[0m        
+Jul 27 17:21:45  [34m│[0m        
+Jul 27 17:21:45  [34m│[0m -----> Installing dependencies
+Jul 27 17:21:45  [34m│[0m        Running 'pnpm install' with pnpm-lock.yaml
+Jul 27 17:21:45  [34m│[0m        Scope: all 9 workspace projects
+Jul 27 17:21:45  [34m│[0m        ? Verifying lockfile against supply-chain policies (475 entries)...
+Jul 27 17:21:45  [34m│[0m        Lockfile is up to date, resolution step is skipped
+Jul 27 17:21:46  [34m│[0m        Progress: resolved 1, reused 0, downloaded 0, added 0
+Jul 27 17:21:46  [34m│[0m        Packages: +473
+Jul 27 17:21:46  [34m│[0m        ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Jul 27 17:21:47  [34m│[0m        Progress: resolved 473, reused 0, downloaded 0, added 0
+Jul 27 17:21:48  [34m│[0m        Progress: resolved 473, reused 0, downloaded 129, added 8
+Jul 27 17:21:49  [34m│[0m        Progress: resolved 473, reused 0, downloaded 274, added 24
+Jul 27 17:21:50  [34m│[0m        Progress: resolved 473, reused 0, downloaded 338, added 31
+Jul 27 17:21:51  [34m│[0m        Progress: resolved 473, reused 0, downloaded 442, added 39
+Jul 27 17:21:52  [34m│[0m        Progress: resolved 473, reused 0, downloaded 472, added 192
+Jul 27 17:21:53  [34m│[0m        Progress: resolved 473, reused 0, downloaded 473, added 473, done
+Jul 27 17:21:55  [34m│[0m        ✓ Lockfile passes supply-chain policies (475 entries in 9.4s)
+Jul 27 17:21:55  [34m│[0m        
+Jul 27 17:21:55  [34m│[0m        dependencies:
+Jul 27 17:21:55  [34m│[0m        + @replit/connectors-sdk 0.4.1
+Jul 27 17:21:55  [34m│[0m        
+Jul 27 17:21:55  [34m│[0m        devDependencies:
+Jul 27 17:21:55  [34m│[0m        + prettier 3.9.4
+Jul 27 17:21:55  [34m│[0m        + typescript 5.9.3
+Jul 27 17:21:55  [34m│[0m        
+Jul 27 17:21:55  [34m│[0m        . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+Jul 27 17:21:55  [34m│[0m        . preinstall: Done
+Jul 27 17:21:55  [34m│[0m        [ERR_PNPM_IGNORED_BUILDS] Ignored build scripts: esbuild@0.27.3
+Jul 27 17:21:55  [34m│[0m        
+Jul 27 17:21:55  [34m│[0m        Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+Jul 27 17:21:55  [34m│[0m 
+Jul 27 17:21:55  [34m│[0m -----> Build failed
+Jul 27 17:21:56  [34m│[0m        
+Jul 27 17:21:56  [34m│[0m        We're sorry this build is failing! You can troubleshoot common issues here:
+Jul 27 17:21:56  [34m│[0m        https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+Jul 27 17:21:56  [34m│[0m        
+Jul 27 17:21:56  [34m│[0m        Some possible problems:
+Jul 27 17:21:56  [34m│[0m        
+Jul 27 17:21:56  [34m│[0m        - Node version not specified in package.json
+Jul 27 17:21:56  [34m│[0m          https://devcenter.heroku.com/articles/nodejs-support#specifying-a-node-js-version
+Jul 27 17:21:56  [34m│[0m        
+Jul 27 17:21:56  [34m│[0m        Love,
+Jul 27 17:21:56  [34m│[0m        Heroku
+Jul 27 17:21:56  [34m│[0m        
+Jul 27 17:21:56  [34m│[0m Timer: Builder ran for 22.415027043s and ended at 2026-07-27T17:21:56Z
+Jul 27 17:21:56  [34m│[0m [31;1mERROR: [0mfailed to build: exit status 1
+Jul 27 17:21:56  [34m│[0m 
+Jul 27 17:21:56  [34m│[0m 
+Jul 27 17:21:56  [34m│[0m [31m ✘ build failed[0m
