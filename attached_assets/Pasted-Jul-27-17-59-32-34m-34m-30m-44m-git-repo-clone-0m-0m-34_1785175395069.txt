@@ -1,0 +1,160 @@
+Jul 27 17:59:32  [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+Jul 27 17:59:32  [34m│[0m [34m › fetching app source code[0m
+Jul 27 17:59:32  [34m│[0m => Selecting branch "main"
+Jul 27 17:59:33  [34m│[0m => Checking out commit "4d255d8f0c6979f67cbbc5bd6fdea2c722261279"
+Jul 27 17:59:33  [34m│[0m 
+Jul 27 17:59:33  [34m│[0m [32m ✔ cloned repo to [35m/workspace[0m[0m
+Jul 27 17:59:33  [34m╰────────────────────────────────────────╼[0m
+Jul 27 17:59:33  
+Jul 27 17:59:34  [34m╭────────────[34m[30m[44m buildpack detection [0m[0m[34m───────────╼[0m
+Jul 27 17:59:34  [34m│[0m [34m › using Ubuntu 22.04 stack[0m
+Jul 27 17:59:37  [34m│[0m Detected the following buildpacks suitable to build your app:
+Jul 27 17:59:37  [34m│[0m 
+Jul 27 17:59:37  [34m│[0m    digitalocean/nodejs-appdetect  v0.1.2    
+Jul 27 17:59:37  [34m│[0m    heroku/nodejs                  v0.342.5  (Node.js)
+Jul 27 17:59:37  [34m│[0m    digitalocean/procfile          v0.1.0    (Procfile)
+Jul 27 17:59:37  [34m│[0m    digitalocean/custom            v0.2.0    (Custom Build Command)
+Jul 27 17:59:37  [34m╰─────────────────────────────────────────────╼[0m
+Jul 27 17:59:37  
+Jul 27 17:59:37  [34m╭────────────[34m[30m[44m app build [0m[0m[34m───────────╼[0m
+Jul 27 17:59:37  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 17:59:37  [34m│[0m Timer: Builder started at 2026-07-27T17:59:37Z
+Jul 27 17:59:37  [34m│[0m Project contains pnpm-lock.yaml, using pnpm
+Jul 27 17:59:38  [34m│[0m        
+Jul 27 17:59:38  [34m│[0m -----> Creating runtime environment
+Jul 27 17:59:38  [34m│[0m        
+Jul 27 17:59:38  [34m│[0m        NPM_CONFIG_LOGLEVEL=error
+Jul 27 17:59:38  [34m│[0m        NODE_VERBOSE=false
+Jul 27 17:59:38  [34m│[0m        NODE_ENV=
+Jul 27 17:59:38  [34m│[0m        NODE_MODULES_CACHE=true
+Jul 27 17:59:38  [34m│[0m        
+Jul 27 17:59:38  [34m│[0m -----> Installing binaries
+Jul 27 17:59:38  [34m│[0m        engines.node (package.json):   20.x
+Jul 27 17:59:38  [34m│[0m        engines.npm (package.json):    unspecified (use default)
+Jul 27 17:59:38  [34m│[0m        engines.pnpm (package.json):   unspecified (use default)
+Jul 27 17:59:38  [34m│[0m        packageManager (package.json): pnpm@9.15.0
+Jul 27 17:59:38  [34m│[0m        
+Jul 27 17:59:38  [34m│[0m        Resolving node version 20.x...
+Jul 27 17:59:38  [34m│[0m        Downloading and installing node 20.20.2...
+Jul 27 17:59:39  [34m│[0m        Validating checksum
+Jul 27 17:59:42  [34m│[0m        Using default npm version: 10.8.2
+Jul 27 17:59:42  [34m│[0m        Downloading and installing pnpm (9.15.0)
+Jul 27 17:59:46  [34m│[0m        Using pnpm 9.15.0
+Jul 27 17:59:49  [34m│[0m        
+Jul 27 17:59:49  [34m│[0m -----> Installing dependencies
+Jul 27 17:59:49  [34m│[0m        Running 'pnpm install' with pnpm-lock.yaml
+Jul 27 17:59:49  [34m│[0m        Scope: all 9 workspace projects
+Jul 27 17:59:50  [34m│[0m        
+Jul 27 17:59:50  [34m│[0m           ╭───────────────────────────────────────────────────────────────────╮
+Jul 27 17:59:50  [34m│[0m           │                                                                   │
+Jul 27 17:59:50  [34m│[0m           │                Update available! 9.15.0 → 11.17.0.                │
+Jul 27 17:59:50  [34m│[0m           │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v11.17.0   │
+Jul 27 17:59:50  [34m│[0m           │                 Run "pnpm add -g pnpm" to update.                 │
+Jul 27 17:59:50  [34m│[0m           │                                                                   │
+Jul 27 17:59:50  [34m│[0m           ╰───────────────────────────────────────────────────────────────────╯
+Jul 27 17:59:50  [34m│[0m        
+Jul 27 17:59:59  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+Jul 27 17:59:59  [34m│[0m        .../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+Jul 27 18:00:00  [34m│[0m        
+Jul 27 18:00:00  [34m│[0m        dependencies:
+Jul 27 18:00:00  [34m│[0m        + @replit/connectors-sdk 0.4.1
+Jul 27 18:00:00  [34m│[0m        
+Jul 27 18:00:00  [34m│[0m        devDependencies:
+Jul 27 18:00:00  [34m│[0m        + prettier 3.9.4
+Jul 27 18:00:00  [34m│[0m        + typescript 5.9.3
+Jul 27 18:00:00  [34m│[0m        
+Jul 27 18:00:00  [34m│[0m        . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+Jul 27 18:00:00  [34m│[0m        . preinstall: Done
+Jul 27 18:00:01  [34m│[0m        Done in 12s
+Jul 27 18:00:01  [34m│[0m        
+Jul 27 18:00:01  [34m│[0m -----> Build
+Jul 27 18:00:01  [34m│[0m        Running build
+Jul 27 18:00:02  [34m│[0m        
+Jul 27 18:00:02  [34m│[0m        > workspace@0.0.0 build /workspace
+Jul 27 18:00:02  [34m│[0m        > pnpm run typecheck && pnpm -r --filter '!@workspace/mockup-sandbox' --if-present run build
+Jul 27 18:00:02  [34m│[0m        
+Jul 27 18:00:02  [34m│[0m        
+Jul 27 18:00:02  [34m│[0m        > workspace@0.0.0 typecheck /workspace
+Jul 27 18:00:02  [34m│[0m        > pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck
+Jul 27 18:00:02  [34m│[0m        
+Jul 27 18:00:03  [34m│[0m        
+Jul 27 18:00:03  [34m│[0m        > workspace@0.0.0 typecheck:libs /workspace
+Jul 27 18:00:03  [34m│[0m        > tsc --build
+Jul 27 18:00:03  [34m│[0m        
+Jul 27 18:00:06  [34m│[0m        Scope: 4 of 9 workspace projects
+Jul 27 18:00:06  [34m│[0m        artifacts/api-server typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 18:00:06  [34m│[0m        artifacts/mockup-sandbox typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 18:00:06  [34m│[0m        artifacts/puregreen-construction typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 18:00:06  [34m│[0m        scripts typecheck$ tsc -p tsconfig.json --noEmit
+Jul 27 18:00:07  [34m│[0m        artifacts/api-server typecheck: Done
+Jul 27 18:00:07  [34m│[0m        scripts typecheck: Done
+Jul 27 18:00:12  [34m│[0m        artifacts/puregreen-construction typecheck: Done
+Jul 27 18:00:13  [34m│[0m        artifacts/mockup-sandbox typecheck: Done
+Jul 27 18:00:13  [34m│[0m        Scope: 7 of 9 workspace projects
+Jul 27 18:00:13  [34m│[0m        artifacts/api-server build$ node ./build.mjs
+Jul 27 18:00:13  [34m│[0m        artifacts/puregreen-construction build$ vite build --config vite.config.ts
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/index.mjs                       1.4mb ⚠️
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-worker.mjs               153.4kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-file.mjs                 142.0kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-pretty.mjs               114.6kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/thread-stream-worker.mjs        7.3kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/index.mjs.map                   2.1mb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-worker.mjs.map           256.9kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-file.mjs.map             229.0kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/pino-pretty.mjs.map           204.0kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build:   dist/thread-stream-worker.mjs.map   12.0kb
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build: ⚡ Done in 171ms
+Jul 27 18:00:14  [34m│[0m        artifacts/api-server build: Done
+Jul 27 18:00:14  [34m│[0m        artifacts/puregreen-construction build: vite v7.3.6 building client environment for production...
+Jul 27 18:00:14  [34m│[0m        artifacts/puregreen-construction build: transforming...
+Jul 27 18:00:15  [34m│[0m        artifacts/puregreen-construction build: src/components/ui/tooltip.tsx (2:0): Error when using sourcemap for reporting an error: Can't resolve original location of error.
+Jul 27 18:00:18  [34m│[0m        artifacts/puregreen-construction build: ✓ 2176 modules transformed.
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: rendering chunks...
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: computing gzip size...
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: dist/public/index.html                              1.74 kB │ gzip:   0.72 kB
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: dist/public/assets/about-contractor-DOwzUsFf.jpg  144.19 kB
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: dist/public/assets/hero-bg-BNV3YDES.jpg           163.79 kB
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: dist/public/assets/index-pqQHFsH7.css             100.58 kB │ gzip:  16.80 kB
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: dist/public/assets/index-98Oxs8xC.js              462.20 kB │ gzip: 148.46 kB
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: ✓ built in 4.78s
+Jul 27 18:00:19  [34m│[0m        artifacts/puregreen-construction build: Done
+Jul 27 18:00:19  [34m│[0m        
+Jul 27 18:00:19  [34m│[0m -----> Caching build
+Jul 27 18:00:19  [34m│[0m        - pnpm cache
+Jul 27 18:00:19  [34m│[0m        
+Jul 27 18:00:19  [34m│[0m -----> Pruning devDependencies
+Jul 27 18:00:19  [34m│[0m        Skipping because NODE_ENV is not 'production'
+Jul 27 18:00:20  [34m│[0m        
+Jul 27 18:00:20  [34m│[0m -----> Build succeeded!
+Jul 27 18:00:20  [34m│[0m  !     This app may not specify any way to start a node process
+Jul 27 18:00:20  [34m│[0m        https://devcenter.heroku.com/articles/nodejs-support#default-web-process-type
+Jul 27 18:00:20  [34m│[0m 
+Jul 27 18:00:20  [34m│[0m Timer: Builder ran for 43.247918725s and ended at 2026-07-27T18:00:20Z
+Jul 27 18:00:20  [34m╰───────────────────────────────────╼[0m
+Jul 27 18:00:20  
+Jul 27 18:00:20  [34m╭────────────[34m[30m[44m app upload [0m[0m[34m───────────╼[0m
+Jul 27 18:00:20  [34m│[0m [34m › uploading app container image to DOCR[0m
+Jul 27 18:00:20  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 18:00:21  [34m│[0m Timer: Exporter started at 2026-07-27T18:00:21Z
+Jul 27 18:00:21  [34m│[0m Adding layer 'heroku/nodejs:profile'
+Jul 27 18:00:38  [34m│[0m Adding 1/1 app layer(s)
+Jul 27 18:00:38  [34m│[0m Adding layer 'buildpacksio/lifecycle:launcher'
+Jul 27 18:00:38  [34m│[0m Adding layer 'buildpacksio/lifecycle:config'
+Jul 27 18:00:38  [34m│[0m Adding label 'io.buildpacks.lifecycle.metadata'
+Jul 27 18:00:38  [34m│[0m Adding label 'io.buildpacks.build.metadata'
+Jul 27 18:00:38  [34m│[0m Adding label 'io.buildpacks.project.metadata'
+Jul 27 18:00:38  [34m│[0m no default process type
+Jul 27 18:00:38  [34m│[0m Timer: Saving <image-0>... started at 2026-07-27T18:00:38Z
+Jul 27 18:00:56  [34m│[0m *** Images (sha256:293f983d74c5f95bd1bca66f10ab7ba0c580e9efb3fc8a0606b0a51b544690ee):
+Jul 27 18:00:56  [34m│[0m       <image-1>
+Jul 27 18:00:56  [34m│[0m Timer: Saving <image-2>... ran for 18.088184961s and ended at 2026-07-27T18:00:56Z
+Jul 27 18:00:56  [34m│[0m Timer: Exporter ran for 35.013148115s and ended at 2026-07-27T18:00:56Z
+Jul 27 18:00:56  [34m│[0m Timer: Cache started at 2026-07-27T18:00:56Z
+Jul 27 18:00:56  [34m│[0m Layer cache not found
+Jul 27 18:01:02  [34m│[0m Adding cache layer 'heroku/nodejs:shim'
+Jul 27 18:01:16  [34m│[0m Timer: Cache ran for 19.783834939s and ended at 2026-07-27T18:01:16Z
+Jul 27 18:01:16  [34m│[0m [32m ✔ uploaded app image to DOCR[0m
+Jul 27 18:01:16  [34m╰────────────────────────────────────╼[0m
+Jul 27 18:01:16  
+Jul 27 18:01:16  [32m ✔ [0m[30m[42m build complete [0m[0m
+Jul 27 18:01:16  
