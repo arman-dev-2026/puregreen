@@ -1,0 +1,77 @@
+Jul 27 17:26:44  [34m╭────────────[34m[30m[44m git repo clone [0m[0m[34m───────────╼[0m
+Jul 27 17:26:44  [34m│[0m [34m › fetching app source code[0m
+Jul 27 17:26:44  [34m│[0m => Selecting branch "main"
+Jul 27 17:26:45  [34m│[0m => Checking out commit "ca8a46117ee1d4ff47c9b5560a1dde9cdf1ab3f0"
+Jul 27 17:26:45  [34m│[0m 
+Jul 27 17:26:45  [34m│[0m [32m ✔ cloned repo to [35m/workspace[0m[0m
+Jul 27 17:26:45  [34m╰────────────────────────────────────────╼[0m
+Jul 27 17:26:45  
+Jul 27 17:26:45  [34m╭────────────[34m[30m[44m buildpack detection [0m[0m[34m───────────╼[0m
+Jul 27 17:26:45  [34m│[0m [34m › using Ubuntu 22.04 stack[0m
+Jul 27 17:26:47  [34m│[0m Detected the following buildpacks suitable to build your app:
+Jul 27 17:26:47  [34m│[0m 
+Jul 27 17:26:47  [34m│[0m    digitalocean/nodejs-appdetect  v0.1.2    
+Jul 27 17:26:47  [34m│[0m    heroku/nodejs                  v0.342.5  (Node.js)
+Jul 27 17:26:47  [34m│[0m    digitalocean/procfile          v0.1.0    (Procfile)
+Jul 27 17:26:47  [34m│[0m    digitalocean/custom            v0.2.0    (Custom Build Command)
+Jul 27 17:26:47  [34m╰─────────────────────────────────────────────╼[0m
+Jul 27 17:26:47  
+Jul 27 17:26:47  [34m╭────────────[34m[30m[44m app build [0m[0m[34m───────────╼[0m
+Jul 27 17:26:48  [34m│[0m [33;1mWarning: [0mno analyzed metadata found at path '/layers/analyzed.toml'
+Jul 27 17:26:48  [34m│[0m Timer: Builder started at 2026-07-27T17:26:47Z
+Jul 27 17:26:48  [34m│[0m Project contains pnpm-lock.yaml, using pnpm
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m -----> Creating runtime environment
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m        NPM_CONFIG_LOGLEVEL=error
+Jul 27 17:26:48  [34m│[0m        NODE_VERBOSE=false
+Jul 27 17:26:48  [34m│[0m        NODE_ENV=
+Jul 27 17:26:48  [34m│[0m        NODE_MODULES_CACHE=true
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m -----> Installing binaries
+Jul 27 17:26:48  [34m│[0m        engines.node (package.json):   20.x
+Jul 27 17:26:48  [34m│[0m        engines.npm (package.json):    unspecified (use default)
+Jul 27 17:26:48  [34m│[0m        engines.pnpm (package.json):   9.x
+Jul 27 17:26:48  [34m│[0m        packageManager (package.json): pnpm@9.15.0
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m         !     Multiple pnpm versions declared
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m               The package.json file indicates the target version of pnpm to install in two fields:
+Jul 27 17:26:48  [34m│[0m               - "packageManager": "pnpm@9.15.0"
+Jul 27 17:26:48  [34m│[0m               - "engines.pnpm": "9.x"
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m               If both fields are present, then "packageManager" will take precedence and "pnpm@9.15.0" will be installed.
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:48  [34m│[0m               To ensure we install the version of pnpm you want, remove one of these fields.
+Jul 27 17:26:48  [34m│[0m               https://devcenter.heroku.com/articles/nodejs-support
+Jul 27 17:26:48  [34m│[0m        
+Jul 27 17:26:49  [34m│[0m        Resolving node version 20.x...
+Jul 27 17:26:49  [34m│[0m        Downloading and installing node 20.20.2...
+Jul 27 17:26:49  [34m│[0m        Validating checksum
+Jul 27 17:26:52  [34m│[0m        Using default npm version: 10.8.2
+Jul 27 17:26:52  [34m│[0m        Downloading and installing pnpm (9.15.0)
+Jul 27 17:26:55  [34m│[0m        Using pnpm 9.15.0
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m -----> Installing dependencies
+Jul 27 17:26:57  [34m│[0m        Running 'pnpm install' with pnpm-lock.yaml
+Jul 27 17:26:57  [34m│[0m        Scope: all 9 workspace projects
+Jul 27 17:26:57  [34m│[0m         ERR_PNPM_LOCKFILE_CONFIG_MISMATCH  Cannot proceed with the frozen installation. The current "overrides" configuration doesn't match the value found in the lockfile
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m        Update your lockfile using "pnpm install --no-frozen-lockfile"
+Jul 27 17:26:57  [34m│[0m 
+Jul 27 17:26:57  [34m│[0m -----> Build failed
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m        We're sorry this build is failing! You can troubleshoot common issues here:
+Jul 27 17:26:57  [34m│[0m        https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m        If you're stuck, please submit a ticket so we can help:
+Jul 27 17:26:57  [34m│[0m        https://help.heroku.com/
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m        Love,
+Jul 27 17:26:57  [34m│[0m        Heroku
+Jul 27 17:26:57  [34m│[0m        
+Jul 27 17:26:57  [34m│[0m Timer: Builder ran for 9.923427455s and ended at 2026-07-27T17:26:57Z
+Jul 27 17:26:57  [34m│[0m [31;1mERROR: [0mfailed to build: exit status 1
+Jul 27 17:26:58  [34m│[0m 
+Jul 27 17:26:58  [34m│[0m 
+Jul 27 17:26:58  [34m│[0m [31m ✘ build failed[0m
