@@ -5,7 +5,7 @@ import aboutImg from '@/assets/about-contractor.jpg';
 const reasons = [
   {
     title: '10+ Years GTA Experience',
-    description: 'Deep expertise in local building codes and structural requirements across the Greater Toronto Area since 2004.'
+    description: 'Deep expertise in local building codes and structural requirements across the Greater Toronto Area.'
   },
   {
     title: 'Fully Insured',
@@ -52,7 +52,7 @@ export function About() {
                 className="w-full h-56 md:h-72 object-cover border-4 border-white shadow-xl"
               />
               <div className="absolute bottom-0 left-0 bg-white text-[#166534] px-5 py-3 shadow-lg">
-                <p className="font-display font-bold text-2xl leading-none">2004</p>
+                <p className="font-display font-bold text-2xl leading-none">2015</p>
                 <p className="text-xs font-semibold tracking-widest uppercase text-gray-500 mt-0.5">Established</p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export function About() {
             {/* Stats */}
             <div className="mt-12 grid grid-cols-2 gap-8">
               <div className="border-l-4 border-[#166534] pl-5">
-                <div className="text-4xl font-display font-bold text-[#166534] mb-1">20+</div>
+                <div className="text-4xl font-display font-bold text-[#166534] mb-1">10+</div>
                 <div className="text-gray-500 font-semibold uppercase tracking-wider text-xs">Years Experience</div>
               </div>
               <div className="border-l-4 border-[#166534] pl-5">
