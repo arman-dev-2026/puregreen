@@ -41,7 +41,7 @@ export function Hero() {
 
           {/* Sub-copy */}
           <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-xl leading-relaxed font-sans font-light">
-            With 20 years of GTA experience, we deliver superior construction, renovation, and structural services. Fully insured. Fully committed.
+            With 10+ years of GTA experience, we deliver superior construction, renovation, and structural services. Fully insured. Fully committed.
           </p>
 
           {/* CTA buttons */}
@@ -64,7 +64,7 @@ export function Hero() {
           {/* Trust indicators */}
           <div className="mt-10 flex flex-wrap gap-6 text-white/90 text-sm font-medium">
             <span className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> 20+ Years Experience
+              <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> 10+ Years Experience
             </span>
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#a7f3d0] rounded-full" /> Fully Insured (SAB Liability)

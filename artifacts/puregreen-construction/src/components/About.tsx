@@ -4,7 +4,7 @@ import aboutImg from '@/assets/about-contractor.jpg';
 
 const reasons = [
   {
-    title: '20+ Years GTA Experience',
+    title: '10+ Years GTA Experience',
     description: 'Deep expertise in local building codes and structural requirements across the Greater Toronto Area since 2004.'
   },
   {
