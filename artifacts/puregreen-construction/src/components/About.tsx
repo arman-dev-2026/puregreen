@@ -4,8 +4,8 @@ import aboutImg from '@/assets/about-contractor.jpg';
 
 const reasons = [
   {
-    title: '10+ Years GTA Experience',
-    description: 'Deep expertise in local building codes and structural requirements across the Greater Toronto Area.'
+    title: '18+ Years Industry Experience',
+    description: 'Our contractors come from leading general contracting companies, bringing specialized expertise in local building codes and structural requirements.'
   },
   {
     title: 'Fully Insured',
@@ -40,7 +40,7 @@ export function About() {
             </h2>
             <div className="w-20 h-1 bg-[#a7f3d0] mb-8" />
             <p className="text-gray-100 text-lg leading-relaxed mb-6 font-sans font-light">
-              For over two decades, PureGreen Construction Inc. has been a cornerstone of quality building and renovation across the Greater Toronto Area.
+              PureGreen Construction and Cleaning Inc. has been delivering high-quality services since 2020. While our company is contemporary, our contractors possess over 18 years of specialized industry experience, having previously worked with leading general contracting companies.
             </p>
             <p className="text-gray-100 text-lg leading-relaxed mb-10 font-sans font-light">
               Run by Imran "Tony" Khan and Michelle Coloma, we bring uncompromising standards, fully insured protection, and a commitment to completing every project on time and within budget.
@@ -52,7 +52,7 @@ export function About() {
                 className="w-full h-56 md:h-72 object-cover border-4 border-white shadow-xl"
               />
               <div className="absolute bottom-0 left-0 bg-white text-[#166534] px-5 py-3 shadow-lg">
-                <p className="font-display font-bold text-2xl leading-none">2015</p>
+                <p className="font-display font-bold text-2xl leading-none">2020</p>
                 <p className="text-xs font-semibold tracking-widest uppercase text-gray-500 mt-0.5">Established</p>
               </div>
             </div>
@@ -92,8 +92,8 @@ export function About() {
             {/* Stats */}
             <div className="mt-12 grid grid-cols-2 gap-8">
               <div className="border-l-4 border-[#166534] pl-5">
-                <div className="text-4xl font-display font-bold text-[#166534] mb-1">10+</div>
-                <div className="text-gray-500 font-semibold uppercase tracking-wider text-xs">Years Experience</div>
+                <div className="text-4xl font-display font-bold text-[#166534] mb-1">18+</div>
+                <div className="text-gray-500 font-semibold uppercase tracking-wider text-xs">Years Expertise</div>
               </div>
               <div className="border-l-4 border-[#166534] pl-5">
                 <div className="text-4xl font-display font-bold text-[#166534] mb-1">100%</div>

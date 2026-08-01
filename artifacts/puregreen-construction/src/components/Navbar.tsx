@@ -54,7 +54,7 @@ export function Navbar() {
                 PureGreen
               </span>
               <span className="text-[9px] md:text-[10px] font-sans tracking-widest uppercase text-gray-500 leading-none mt-0.5">
-                Construction Inc.
+                Construction & Cleaning Inc.
               </span>
             </div>
           </button>

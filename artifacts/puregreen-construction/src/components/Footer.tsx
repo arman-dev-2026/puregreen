@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <div>
               <div className="font-display font-bold text-xl uppercase tracking-wide leading-none">PureGreen</div>
-              <div className="text-[10px] tracking-widest uppercase text-green-200 leading-none mt-0.5">Construction Inc.</div>
+              <div className="text-[10px] tracking-widest uppercase text-green-200 leading-none mt-0.5">Construction & Cleaning Inc.</div>
             </div>
           </div>
           <p className="text-green-100 font-sans font-light text-sm leading-relaxed max-w-xs">
@@ -68,7 +68,7 @@ export function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-[#1f7941] py-5">
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-green-300 text-xs font-sans">
-          <p>&copy; {currentYear} PureGreen Construction Inc. All rights reserved.</p>
+          <p>&copy; {currentYear} PureGreen Construction and Cleaning Inc. All rights reserved.</p>
           <p>Fully Insured — SAB Liability Coverage</p>
         </div>
       </div>
